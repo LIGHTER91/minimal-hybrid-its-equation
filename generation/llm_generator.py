@@ -1,7 +1,7 @@
 import requests
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "qwen2.5:3b"  # ou qwen2.5:7b
+MODEL_NAME = "qwen2.5:3b"  
 
 
 def generate_exercise(prompt: str) -> str:
