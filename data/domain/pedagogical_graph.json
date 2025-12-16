@@ -1,0 +1,83 @@
+{
+    "metadata": {
+      "domain": "Linear equations",
+      "level": "Middle school (Grade 8–9)",
+      "description": "First-degree equations with one unknown",
+      "version": "1.0"
+    },
+    "concepts": {
+      "C1": {
+        "name": "Understanding equality",
+        "difficulty": 1,
+        "prerequisites": [],
+        "common_errors": [
+          "treating equality as a computation",
+          "changing one side only"
+        ]
+      },
+      "C2": {
+        "name": "Solve x + a = b",
+        "difficulty": 1,
+        "prerequisites": ["C1"],
+        "common_errors": [
+          "sign_error",
+          "adding instead of subtracting"
+        ]
+      },
+      "C3": {
+        "name": "Solve x - a = b",
+        "difficulty": 1,
+        "prerequisites": ["C1"],
+        "common_errors": [
+          "sign_error",
+          "adding a to the wrong side"
+        ]
+      },
+      "C4": {
+        "name": "Solve a·x = b",
+        "difficulty": 2,
+        "prerequisites": ["C2", "C3"],
+        "common_errors": [
+          "dividing by the wrong coefficient",
+          "forgetting division step"
+        ]
+      },
+      "C5": {
+        "name": "Solve x / a = b",
+        "difficulty": 2,
+        "prerequisites": ["C2", "C3"],
+        "common_errors": [
+          "multiplying the wrong side",
+          "forgetting to isolate x"
+        ]
+      },
+      "C6": {
+        "name": "Solve a·x + b = c",
+        "difficulty": 3,
+        "prerequisites": ["C4", "C5"],
+        "common_errors": [
+          "wrong order of operations",
+          "sign_error"
+        ]
+      },
+      "C7": {
+        "name": "Solve a·x + b = c·x + d",
+        "difficulty": 3,
+        "prerequisites": ["C6"],
+        "common_errors": [
+          "moving terms incorrectly",
+          "forgetting to group x terms"
+        ]
+      },
+      "C8": {
+        "name": "Check a solution",
+        "difficulty": 1,
+        "prerequisites": ["C7"],
+        "common_errors": [
+          "not substituting correctly",
+          "arithmetic mistakes"
+        ]
+      }
+    }
+  }
+  

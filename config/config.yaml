@@ -1,0 +1,64 @@
+# =========================
+# Global experiment config
+# =========================
+
+experiment:
+  episodes: 50
+  random_seed: 42
+  save_student_after_experiment: true
+
+# =========================
+# LLM configuration
+# =========================
+
+llm:
+  generator:
+    provider: ollama
+    model: phi3:mini
+    temperature: 0.3
+    top_p: 0.9
+    max_retries: 2
+
+  judge:
+    provider: ollama
+    model: phi3:mini
+    temperature: 0.0
+
+ollama:
+  url: "http://localhost:11434/api/generate"
+  max_loaded_models: 1
+  num_threads: 2
+
+# =========================
+# ITS pedagogical parameters
+# =========================
+
+tutor:
+  mastery_threshold: 0.6
+  difficulty_levels:
+    - easy
+    - medium
+    - hard
+
+student:
+  mastery_update:
+    success_increment: 0.1
+    failure_decrement: 0.1
+    min_mastery: 0.0
+    max_mastery: 1.0
+
+simulation:
+  base_success_bias: 0.2
+  max_success_probability: 0.9
+
+# =========================
+# Verification & evaluation
+# =========================
+
+verifier:
+  strict_concept_match: true
+  require_solution_steps: true
+
+metrics:
+  track_acceptance_rate: true
+  track_average_score: true
